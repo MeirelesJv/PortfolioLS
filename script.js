@@ -17,3 +17,14 @@ function activate(e) {
 
 document.addEventListener('click',activate,false);
 
+function init(e) {
+  if (!e.target.closest('.projeto')) return;
+  let hero = document.querySelector('div[data-pos="0"]');
+  let target = e.target.parentElement;
+  hero.addEventListener('click', function() {
+    hero.classList.toggle('fullscreen');
+  });
+  [target.dataset.pos,hero.dataset.pos] = [hero.dataset.pos,target.dataset.pos];
+}
+
+window.addEventListener('click',init,false);
