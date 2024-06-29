@@ -145,17 +145,32 @@ body::-webkit-scrollbar {
                 font-family: Higuen\ Regular;
                 font-weight: 400;
             }
+            .homeBlock-button {
+                padding-top: 10%;
+                
+                button {
+                    padding: 17px 40px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    border: 0;
+                    background-color: #414B3B;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    color: hsl(0, 0%, 100%);
+                  }
+            }
         }
     }
 
     .secondBlock {
         background-color: #d8bf9f;
         display: grid;
-        height: 800px;
+        height: 100vh;
 
         .secondBlock-title {
             display: flex;
-            justify-content: end;
+            justify-content: center;
             padding-right: 40px;
             z-index: 5;
 
@@ -174,9 +189,7 @@ body::-webkit-scrollbar {
             gap: 15px;
             justify-content: center;
             font-family: "Sorts Mill Goudy", serif;
-            position: absolute;
             margin: 50px;
-            padding-top: 100px;
 
             .secondBlock-g {
                 display: flex;
@@ -186,22 +199,21 @@ body::-webkit-scrollbar {
 
             img {
                 border-radius: 5%;
-                width: 400px;
-                height: 386px;
+                width: 30vw;
+                height: 50vh;
                 aspect-ratio: auto 400 / 386;
                 object-fit: cover;
             }
 
             h2 {
-                font-size: 32px;
+                font-size: 2.5vw;
                 font-weight: 200;
             }
 
             .secondblock-span {
-                max-width: 400px;
 
                 span {
-                    font-size: 24px;
+                    font-size: 1.2vw;
                     text-overflow: clip;
                     display: grid;
                     text-align: center;
@@ -306,7 +318,7 @@ body::-webkit-scrollbar {
         transform: translateX(-50%);
         z-index: 5;
         user-select: none;
-        gap: 1200px;
+        gap: 80vw;
 
         & .btn {
             background-color: rgba(255, 255, 255, 0.5);
@@ -444,27 +456,28 @@ body::-webkit-scrollbar {
         }
 
         &:nth-child(3) {
-            top: 70%;
-            left: 70%;
-            width: 100px;
-            height: 150px;
+            top: 20%;
+            left: 82%;
+            width: 15vw;
+            height: 25vh;
         }
 
         &:nth-child(4) {
-            top: 70%;
-            left: calc(70% + 130px);
-            width: 100px;
-            height: 150px;
+            top: 50%;
+            left: 82%;
+            width: 15vw;
+            height: 25vh;
         }
 
         &:nth-child(5) {
-            top: 70%;
-            left: calc(70% + 260px);
-            width: 100px;
-            height: 150px;
+            top: 80%;
+            left: 82%;
+            width: 15vw;
+            height: 25vh;
         }
 
         &:nth-child(6) {
+            top: 76%;
             left: calc(80% + 390px);
             opacity: 0;
         }
@@ -683,36 +696,22 @@ body::-webkit-scrollbar {
 }
 
 .fiveBlock {
-
-    img {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        position: absolute;
-    }
-
-    .background__bloor {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        background-color: #1d1e20;
-        opacity: 0.17;
-    }
+    background-image: url("./Portfolio/34.\ Contato.png");
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    object-fit: cover;
 
     .fiveBlock-footer {
         display: flex;
         justify-content: flex-end;
-        padding-top: 90px;
 
         .fiveBlock-text {
-
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 12vh;
             padding-right: 70px;
 
             .fiveBlock-title {
@@ -730,7 +729,7 @@ body::-webkit-scrollbar {
             .fiveBlock-contatos {
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                gap: 12vh;
 
                 h3 {
                     display: flex;
@@ -779,6 +778,10 @@ body::-webkit-scrollbar {
         line-height: 1.4;
     }
 
+    .homeBlock-button {
+        display: b;
+    }
+
     .blocks {
         & .homeBlock {
             height: 100vh;
@@ -794,6 +797,13 @@ body::-webkit-scrollbar {
                     overflow-wrap: break-word;
                     text-align: center;
                 }
+
+                .homeBlock-button {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                
             }
 
             & .homeBlock-background {
@@ -1043,6 +1053,10 @@ body::-webkit-scrollbar {
                     font-family: Higuen\ Regular;
                     overflow-wrap: break-word;
                     text-align: center;
+                }
+                .homeBlock-button {
+                    display: flex;
+                    justify-content: center;
                 }
             }
 
